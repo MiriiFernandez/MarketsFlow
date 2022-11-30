@@ -11,7 +11,7 @@ html {
 /*VARIABLES*/
 
 :root {
-  --colorverdeBase: #59d9b5;
+  --colorverdeBase: #02b582;
   --colorverdeOscuro: #01402e;
   --colorverdeClaro: #b3f2e0;
   --colorverdeMuyClaro: #d0f2e9;
@@ -35,9 +35,10 @@ html {
 /* ********************************************************* */
 /*contenedor*/
 .container {
-  background-color: var(--colorverdeBase);
-  border-radius: 10px;
+  background-color: var(--colorgrisFondo);
+  padding: 10px;
 }
+
 /*header*/
 header {
   position: absolute;
@@ -89,10 +90,10 @@ svg {
 /*MAIN*/
 main {
   display: flex;
-  height: 93vh;
+  margin-top: 90px;
   justify-content: center;
   align-items: center;
-  color: var(--colorgrisFondo);
+  color: var(--colorverdeBase);
   flex-direction: column;
   padding: 0px 0 60px 0;
 }
@@ -100,15 +101,17 @@ main {
 .logotipo {
   display: flex;
   align-items: center;
+  color: black;
 }
 
 .hexagono {
-  background: url(../imagenes/hexagon.svg);
+  background: url(../imagenes/hexagonoGreen.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 45px;
   width: 45px;
+  margin-right: 8px;
 }
 
 .parafos {
@@ -125,13 +128,13 @@ main {
 .input2 {
   width: 300px;
   height: 30px;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 25px;
   text-align: center;
 }
 
 .input {
-  background-color: var(--colorverdeOscuro);
+  background-color: var(--colorverdeBase);
 }
 
 .input2 {
@@ -161,8 +164,17 @@ main {
 
 .descubrir {
   text-decoration: none;
+  color: var(--colorverdeBase);
+  font-size: 1.125rem;
 }
 
 footer {
   text-align: center;
+  color: #95afa8;
 }
+
+#copyright{
+  margin-top: 10px;
+}
+
+
