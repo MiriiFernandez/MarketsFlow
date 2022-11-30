@@ -1,0 +1,135 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*VARIABLES*/
+
+:root {
+  --colorverdeBase: #59d9b5;
+  --colorverdeOscuro: #01402e;
+  --colorverdeClaro: #b3f2e0;
+  --colorverdeMuyClaro: #d0f2e9;
+  --colorgrisFondo: #fafcfe;
+  /*Margenes*/
+  --margen_paddingGeneral: 30px;
+  --margen_paddingBotones: 8px 10px;
+  --margen_separacionSections: 80px;
+  --margen_CurvaBoton: 20px;
+  /*Fuentes*/
+  --fuente_base: Arial;
+  --fuente_Base_Tamayo: 1rem;
+  --fuente_H1: 2rem;
+  --fuente_H2: 1.5rem;
+  --fuente_H3: 1.3rem;
+  --fuenteBotones: var(--fuente_H3);
+  --fuente_Parrafo: var(--fuente_Base_Tamayo);
+}
+
+/* ********************************************************* */
+/* ********************************************************* */
+/*contenedor*/
+.container {
+  background-color: var(--colorverdeBase);
+}
+/*header*/
+header {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  width: 70vw;
+}
+
+.despliega {
+  display: none;
+}
+label {
+  position: absolute;
+  top: var(--margen_paddingGeneral);
+  left: var(--margen_paddingGeneral);
+  z-index: 5;
+}
+
+.desplegable {
+  display: none;
+  background-color: var(--colorverdeOscuro);
+  width: 100vw;
+  height: 100vh;
+  font-size: var(--fuente_H1);
+  list-style: none;
+  padding: calc(var(--margen_paddingGeneral) * 6) var(--margen_paddingGeneral);
+  color: var(--colorgrisFondo);
+}
+
+input:checked ~ .desplegable {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+svg {
+  width: 32px;
+}
+
+.inicio {
+  margin-right: 50px;
+}
+
+/*MAIN*/
+main {
+  display: flex;
+  height: 93vh;
+  justify-content: center;
+  align-items: center;
+  color: var(--colorgrisFondo);
+  flex-direction: column;
+  padding: 0px 0 60px 0;
+}
+
+.logotipo {
+  display: flex;
+  align-items: center;
+}
+
+.hexagono {
+  background: url(../imagenes/hexagon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45px;
+  width: 45px;
+}
+
+.parafos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.you {
+  margin-bottom: 90px;
+}
+.input,
+.input2 {
+  width: 300px;
+  height: 30px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*la parte del login*/
