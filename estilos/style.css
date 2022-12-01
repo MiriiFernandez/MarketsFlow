@@ -35,14 +35,14 @@ html {
 /* ********************************************************* */
 /*contenedor*/
 .container {
-  background-color: var(--colorgrisFondo);
+  background-color: var(--colorverdeBase);
   padding: 10px;
 }
 
 /*header*/
 header {
   position: absolute;
-  z-index: 10;
+  z-index: 5;
   top: 0;
   left: 0;
 }
@@ -80,7 +80,7 @@ input:checked ~ .desplegable {
 }
 
 svg {
-  width: 32px;
+  width: 10px;
 }
 
 .inicio {
