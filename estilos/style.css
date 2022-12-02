@@ -37,6 +37,11 @@ html {
 .container {
   background-color: var(--colorverdeBase);
   padding: 10px;
+  height: 100vh;
+}
+
+#boton {
+  display: none;
 }
 
 /*header*/
@@ -58,10 +63,10 @@ label {
   position: absolute;
   top: var(--margen_paddingGeneral);
   left: var(--margen_paddingGeneral);
-  z-index: 5;
+  z-index: 10;
 }
-
-.desplegable {
+/* MENU DESPLEGABLE */
+ul.desplegable {
   display: none;
   background-color: var(--colorverdeOscuro);
   width: 100vw;
@@ -71,7 +76,10 @@ label {
   padding: calc(var(--margen_paddingGeneral) * 6) var(--margen_paddingGeneral);
   color: var(--colorgrisFondo);
 }
-
+.servicios {
+  text-decoration: none;
+  color: white;
+}
 input:checked ~ .desplegable {
   display: flex;
   align-items: center;
@@ -80,7 +88,7 @@ input:checked ~ .desplegable {
 }
 
 svg {
-  width: 10px;
+  width: 32px;
 }
 
 .inicio {
@@ -90,11 +98,10 @@ svg {
 /*MAIN*/
 main {
   display: flex;
-  margin-top: 90px;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  color: var(--colorverdeBase);
-  flex-direction: column;
+  color: white;
   padding: 0px 0 60px 0;
 }
 
@@ -103,7 +110,7 @@ main {
   align-items: center;
   color: black;
 }
-
+/* HEXAGONO BLANCO */
 .hexagono {
   background: url(../imagenes/hexagonoGreen.svg);
   background-repeat: no-repeat;
@@ -112,6 +119,7 @@ main {
   height: 45px;
   width: 45px;
   margin-right: 8px;
+  filter: invert(100%);
 }
 
 .parafos {
@@ -150,7 +158,7 @@ main {
   font-size: 1.25rem;
   color: black;
 }
-
+/* FORMULARIO */
 .form {
   display: flex;
   align-items: center;
@@ -167,14 +175,39 @@ main {
   color: var(--colorverdeBase);
   font-size: 1.125rem;
 }
-
+/* FOOTER */
 footer {
   text-align: center;
   color: #95afa8;
 }
-
-#copyright{
+/* COPYRIGHT */
+#copyright {
   margin-top: 10px;
 }
 
+.containerLogin {
+  background-color: white;
+  padding: 10px;
+}
 
+
+.mainLogin{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--colorverdeBase);
+  padding: 0px 0 60px 0; 
+}
+/* HEXAGONO VERDE DEL LOGIN */
+.hexagonoVerde{
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45px;
+  width: 45px;
+  margin-right: 8px;
+  
+}
